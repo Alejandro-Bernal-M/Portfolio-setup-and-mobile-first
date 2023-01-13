@@ -132,7 +132,7 @@ li {
   display: flex;
   flex: 1;
   margin: 0;
-  padding: 0;
+  padding: 1;
   justify-content: center;
 }
 
