@@ -358,10 +358,10 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/illustration-contact-form.svg);
+  background-image: url(illustration-contact-form.svg);
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 860px;
+  background-position-y: 68%;
 }
 
 .form {
@@ -411,6 +411,7 @@ li {
   padding: 12px;
   height: 114px;
   border: 1px solid #60C095;
+  width: 92%;
 }
 
 #submit {
