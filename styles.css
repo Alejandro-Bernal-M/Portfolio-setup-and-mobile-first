@@ -381,7 +381,7 @@ li {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;  
+  color: #172b4d;
 }
 
 .form input,
@@ -393,8 +393,8 @@ li {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #6B778C;
-  border: 1px solid #D0D9D4;
+  color: #6b778c;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 13px 16px;
   margin: 12px auto;
@@ -403,14 +403,14 @@ li {
 #user-name,
 #user-email {
   max-height: 30px;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 #textarea {
-  color: #091E42;
+  color: #091e42;
   padding: 12px;
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   width: 92%;
 }
 
@@ -419,21 +419,22 @@ li {
   gap: 10px;
   width: 129px;
   max-height: 48px;
-  background: #36B37F;
-  border-radius: 4px;    
+  background: #36b37f;
+  border-radius: 4px;
   color: #fff;
   margin-bottom: 50px;
 }
 
 .contact-ill {
-  position:relative;
+  position: relative;
   top: -50%;
-  right:-42vw;
+  right: -42vw;
 }
 
 .last-link {
   display: flex;
-  /*justify-content: flex-start;*/
+
+  /* justify-content: flex-start; */
   height: 20px;
   flex: 1 1 20px;
   padding: 0;
@@ -441,13 +442,13 @@ li {
 }
 
 .last-email {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E; 
+  color: #42526e;
 }
 
 footer {
