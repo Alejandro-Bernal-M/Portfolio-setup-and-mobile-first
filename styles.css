@@ -364,7 +364,7 @@ li {
   justify-content: center;
   align-items: center;
   width: 85%;
-  height: 100vh;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -381,6 +381,28 @@ li {
 #textarea {
   width: 90%;
   padding: 0 auto;
-  margin: 3px;
   flex: 1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6B778C;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  padding: 13px 16px;
+  margin: 12px auto;
+}
+
+#user-name,
+#user-email {
+  
+  color: #6B778C;
+
+}
+
+#textarea {
+  color: #091E42;
+  padding: 12px;
+  height: 114px;
 }
