@@ -492,9 +492,21 @@ footer {
     display: flex;
   }
 
+  header {
+    position: absolute; 
+    top: 0;
+    height: 50px;
+    z-index: 10;
+  }
+
   #nav-bar {
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+
   }
 
   .ul-nav {
@@ -515,4 +527,63 @@ footer {
     margin: 0 20px;
     font-family: 'Inter', sans-serif;
   }
+
+  .headline {
+    background-image: url("Desktop-images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+  }
+
+  #content {
+    margin-top: 5%;
+    margin-bottom: 24px;
+    max-width: 920px;
+    max-height: 200px;
+  }
+
+  
+  .main_content {
+    margin: 10px auto;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .secondary-text {
+    margin: 0 60px 40px 40px;
+    padding: 0 10px;
+    line-height: 32px;
+  }
+
+  .div-links {
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  .a2 {
+    order: 1;
+  }
+
+  .a5 {
+    order: 2;
+  }
+
+  .a1 {
+    order: 3;
+  }
+
+  .a3 {
+    order: 5;
+  }
+
+
+
+  .work-section {
+    position: relative;
+    top: 110vh;
+  }
+
 }
