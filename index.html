@@ -12,8 +12,13 @@
 <body>
         <header id="header">
             <nav id="nav-bar">
-                <a href="#header"><img src="Images/Welcome.png" id="Welcome"></a>
-                <a><i class=" fa1 fa-solid fa-bars"></i></a>
+                <a class="mobile" href="#header"><img src="Images/Welcome.png" id="Welcome"></a>
+                <a class="mobile"><i class=" fa1 fa-solid fa-bars"></i></a>
+                <ul class="desktop ul-nav">
+                    <li><a href="#work-section" >Porfolio</a></li>
+                    <li><a href="#about-me-section">About</a></li>
+                    <li><a href="#form-section" >Contact</a></li>
+                </ul>
              </nav>
          </header>
          <section class="headline">
@@ -39,7 +44,7 @@
                 <img src="Icons/Disabled.svg">
              </div>
          </section>
-         <section class="work-section">
+         <section class="work-section" id="work-section">
          <h3 class="h3-works">My recents<br> works</h3>
          <hr class="work-hr">
              <div class="works-grid">
@@ -105,7 +110,7 @@
                 </div>
              </div>
             </section>
-            <section class="about-me-section">
+            <section class="about-me-section" id="about-me-section">
                     
                 <div class="about-me">
                     <img class="il-about il-1-a" src="Images/illustration 1- about me-mobile.svg">
@@ -146,7 +151,7 @@
                         </div>
                 </div>
             </section>
-            <section class="form-section">
+            <section class="form-section" id="form-section">
                  <form class="form" action="https://formspree.io/f/xlekdbyr" method="post">
                     <h2 class="h2-form">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                     <input type="text" name="user-name" id="user-name" maxlength="30" placeholder="Full name" required>
