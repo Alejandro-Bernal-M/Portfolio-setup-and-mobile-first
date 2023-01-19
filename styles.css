@@ -491,7 +491,7 @@ footer {
     overflow-x: hidden;
     background-image: url(Desktop-images/left-form.svg), url(Desktop-images/right-form.svg), url(Desktop-images/illustration-2-contact-form-desktop.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position-y: 201em, 193.5em, 211em;
+    background-position-y: 215em, 206.5em, 225em;
     background-position-x: left, right, 16em;
   }
 
@@ -584,6 +584,11 @@ footer {
     top: min(-25vh, -20vw);
   }
 
+  .work-section-button {
+    position: relative;
+    top: min(-25vh, -20vw);
+  }
+
   .a2 {
     order: 1;
   }
@@ -628,7 +633,7 @@ footer {
   .about-me-section {
     width: 100%;
     position: relative;
-    top: 1100px;
+    top: 1300px;
   }
 
   .about-me {
@@ -682,7 +687,7 @@ footer {
   .form-section {
     width: 85%;
     position: relative;
-    top: 1300px;
+    top: 1500px;
     background: none;
     flex-direction: row;
     margin: 0 auto;
@@ -713,7 +718,7 @@ footer {
   footer {
     height: 70px;
     position: relative;
-    top: 1500px;
+    top: 1710px;
     padding: 10px;
   }
 
