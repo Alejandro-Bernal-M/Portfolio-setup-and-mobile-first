@@ -478,25 +478,30 @@ footer {
 }
 
 .desktop {
-  display:none;
+  display: none;
   position: absolute;
-  padding: 0; 
+  padding: 0;
   margin: 0;
   top: 0;
   left: 0;
 }
 
-@media  screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
+    background-image: url(Desktop-images/left-form.svg), url(Desktop-images/right-form.svg), url(Desktop-images/illustration-2-contact-form-desktop.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 201em, 193.5em, 211em;
+    background-position-x: left, right, 16em;
   }
+
   .mobile {
     display: none;
     position: absolute;
     padding: 0;
     margin: 0;
     top: 0;
-    left: 0; 
+    left: 0;
   }
 
   .desktop {
@@ -504,7 +509,7 @@ footer {
   }
 
   header {
-    position: absolute; 
+    position: absolute;
     top: 0;
     height: 50px;
     z-index: 10;
@@ -517,7 +522,6 @@ footer {
     justify-content: center;
     width: 200px;
     margin: 0 auto;
-
   }
 
   .ul-nav {
@@ -526,11 +530,11 @@ footer {
     list-style: none;
     justify-content: center;
     align-items: center;
-    
   }
+
   .ul-nav a {
     text-decoration: none;
-    color: #172B4D;
+    color: #172b4d;
     font-weight: 800;
   }
 
@@ -553,14 +557,13 @@ footer {
   #content {
     margin-top: 0;
     position: relative;
-    top: min(-25vh,-20vw);
+    top: min(-25vh, -20vw);
     justify-content: center;
     margin-bottom: 24px;
     max-width: 920px;
     max-height: 200px;
   }
 
-  
   .main_content {
     margin: 10px auto;
     font-weight: 800;
@@ -578,7 +581,7 @@ footer {
     margin-top: 10px;
     width: 20%;
     position: relative;
-    top: min(-25vh,-20vw);
+    top: min(-25vh, -20vw);
   }
 
   .a2 {
@@ -621,7 +624,7 @@ footer {
     max-width: 369px;
     max-height: 474px;
   }
-  
+
   .about-me-section {
     width: 100%;
     position: relative;
@@ -667,7 +670,7 @@ footer {
   }
 
   .grid-item-about {
-    width: min(369px,30vw);
+    width: min(369px, 30vw);
     max-width: 369px;
     height: 352px;
   }
@@ -685,6 +688,7 @@ footer {
     margin: 0 auto;
     align-items: unset;
   }
+
   .h2-form {
     flex: 1.4;
     font-size: 30px;
@@ -702,7 +706,7 @@ footer {
 
   .hr-footer {
     width: 100%;
-    background: #DFE1E6;
+    background: #dfe1e6;
     margin-bottom: 30px;
   }
 
@@ -717,5 +721,4 @@ footer {
     margin-top: 20px;
     width: 20%;
   }
-
 }
