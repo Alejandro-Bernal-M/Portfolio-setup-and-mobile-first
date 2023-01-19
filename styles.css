@@ -1,9 +1,12 @@
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 .headline {
@@ -455,6 +458,11 @@ li {
   margin: 0 auto;
 }
 
+.last-link li {
+  justify-content: baseline;
+  align-items: center;
+}
+
 .last-email {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -467,4 +475,255 @@ li {
 
 footer {
   margin-bottom: 250px;
+}
+
+.desktop {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background-image: url(Desktop-images/left-form.svg), url(Desktop-images/right-form.svg), url(Desktop-images/illustration-2-contact-form-desktop.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 215em, 206.5em, 225em;
+    background-position-x: left, right, 16em;
+  }
+
+  .mobile {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    z-index: 10;
+  }
+
+  #nav-bar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .ul-nav {
+    top: unset;
+    left: unset;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ul-nav a {
+    text-decoration: none;
+    color: #172b4d;
+    font-weight: 800;
+  }
+
+  .ul-nav li {
+    margin: 0 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .headline {
+    width: 100vw;
+    background-image: url("Desktop-images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    height: 1300px;
+    justify-content: center;
+  }
+
+  #content {
+    margin-top: 0;
+    position: relative;
+    top: min(-25vh, -20vw);
+    justify-content: center;
+    margin-bottom: 24px;
+    max-width: 920px;
+    max-height: 200px;
+  }
+
+  .main_content {
+    margin: 10px auto;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .secondary-text {
+    margin: 0 60px 40px 40px;
+    padding: 0 10px;
+    line-height: 32px;
+  }
+
+  .main-links {
+    margin-top: 10px;
+    width: 20%;
+    position: relative;
+    top: min(-25vh, -20vw);
+  }
+
+  .work-section-button {
+    position: relative;
+    top: min(-25vh, -20vw);
+  }
+
+  .a2 {
+    order: 1;
+  }
+
+  .a5 {
+    order: 2;
+  }
+
+  .a1 {
+    order: 3;
+  }
+
+  .a3 {
+    order: 5;
+  }
+
+  .work-section {
+    width: 100%;
+    position: relative;
+    top: 1000px;
+  }
+
+  .h3-works {
+    margin-bottom: 50px;
+  }
+
+  .works-grid {
+    width: 85%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 12px 16px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    max-width: 369px;
+    max-height: 474px;
+  }
+
+  .about-me-section {
+    width: 100%;
+    position: relative;
+    top: 1300px;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .il-1-b {
+    position: relative;
+    left: 82.5vw;
+    top: 190px;
+    display: inline;
+    margin: 0;
+    z-index: -2;
+  }
+
+  .il-2-b {
+    position: absolute;
+    display: inline;
+    right: -10vw;
+    top: 320px;
+    margin: 0;
+    z-index: -2;
+  }
+
+  .p-about {
+    width: 60%;
+    height: 96px;
+  }
+
+  .about-me-grid {
+    width: 80%;
+    height: 352px;
+    padding: 0;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 12px;
+  }
+
+  .grid-item-about {
+    width: min(369px, 30vw);
+    max-width: 369px;
+    height: 352px;
+  }
+
+  .button-about {
+    margin-bottom: 50px;
+  }
+
+  .form-section {
+    width: 85%;
+    position: relative;
+    top: 1500px;
+    background: none;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: unset;
+  }
+
+  .h2-form {
+    flex: 1.4;
+    font-size: 30px;
+    text-align: unset;
+  }
+
+  .form {
+    flex: 2;
+  }
+
+  .button-form {
+    align-self: flex-start;
+    margin-left: 1vw;
+  }
+
+  .hr-footer {
+    width: 100%;
+    background: #dfe1e6;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    height: 70px;
+    position: relative;
+    top: 1710px;
+    padding: 10px;
+  }
+
+  .last-link {
+    margin-top: 20px;
+    width: 20%;
+  }
 }
