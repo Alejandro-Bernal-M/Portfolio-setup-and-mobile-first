@@ -438,6 +438,8 @@ li {
 
 .button-h:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.2);
+  transition-timing-function: ease-out;
 }
 
 .button-h:active {
@@ -628,6 +630,8 @@ footer {
   .grid-item {
     max-width: 369px;
     max-height: 474px;
+    transition-property: all;
+    transition-duration: 0.5s;
   }
 
   .about-me-section {
@@ -682,6 +686,7 @@ footer {
 
   .button-about {
     margin-bottom: 50px;
+    transition-duration: 0.2s;
   }
 
   .form-section {
@@ -707,6 +712,7 @@ footer {
   .button-form {
     align-self: flex-start;
     margin-left: 1vw;
+    transition-duration: 0.2s;
   }
 
   .hr-footer {
@@ -725,5 +731,9 @@ footer {
   .last-link {
     margin-top: 20px;
     width: 20%;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-10px);
   }
 }
