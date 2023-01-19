@@ -726,4 +726,13 @@ footer {
     margin-top: 20px;
     width: 20%;
   }
+
+  .grid-item {
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-10px);
+  }
 }
