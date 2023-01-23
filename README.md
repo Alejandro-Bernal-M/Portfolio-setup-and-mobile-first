@@ -65,7 +65,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [[There is no live demo]](https://alejandro-bernal-m.github.io/Portfolio-setup-and-mobile-first/)
+- [[Github pages]](https://alejandro-bernal-m.github.io/Portfolio-setup-and-mobile-first/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +116,7 @@ Just open it in your browser.
 
 👤 **Author1**
 
-- GitHub: [Alejadro](https://github.com/Alejandro-Bernal-M)
+- GitHub: [Alejandro](https://github.com/Alejandro-Bernal-M)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
