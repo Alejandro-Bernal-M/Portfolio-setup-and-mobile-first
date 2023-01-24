@@ -70,7 +70,7 @@ body {
 }
 
 #green-word {
-  color: #28865F;
+  color: #28865f;
 }
 
 .secondary-text {
@@ -120,7 +120,7 @@ li {
 }
 
 .list-about > li {
-  color: #28865F;
+  color: #28865f;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -222,7 +222,7 @@ li {
 }
 
 .button-flex {
-  background: #28865F;
+  background: #28865f;
   color: #fff;
   width: 122px;
   height: 48px;
@@ -293,7 +293,7 @@ li {
 .button-about {
   width: 159px;
   height: 48px;
-  background: #28865F;
+  background: #28865f;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -428,7 +428,7 @@ label {
   padding: 12px;
   gap: 10px;
   max-height: 48px;
-  background: #28865F;
+  background: #28865f;
   border-radius: 4px;
   color: #fff;
   margin-bottom: 50px;
