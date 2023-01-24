@@ -403,6 +403,13 @@ li {
   margin: 12px auto;
 }
 
+label {
+  border: none;
+  width: 90%;
+  padding: 0;
+  flex: 1;
+}
+
 #user-name,
 #user-email {
   max-height: 30px;
