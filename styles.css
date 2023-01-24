@@ -286,7 +286,7 @@ li {
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin-bottom: 10px;
+  margin-bottom: 36px;
   flex: none;
 }
 
@@ -304,7 +304,7 @@ li {
   color: #fff;
   border: none;
   flex: none;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .about-me-grid {
@@ -427,7 +427,6 @@ label {
 #submit {
   padding: 12px;
   gap: 10px;
-  width: 129px;
   max-height: 48px;
   background: #28865F;
   border-radius: 4px;
@@ -587,7 +586,7 @@ footer {
   }
 
   .main-links {
-    margin-top: 10px;
+    margin-top: 80px;
     width: 20%;
     position: relative;
     top: min(-25vh, -20vw);
@@ -676,6 +675,7 @@ footer {
   }
 
   .about-me-grid {
+    top: 40px;
     width: 80%;
     height: 352px;
     padding: 0;
@@ -694,6 +694,7 @@ footer {
   .button-about {
     margin-bottom: 50px;
     transition-duration: 0.2s;
+    width: auto;
   }
 
   .form-section {
@@ -720,6 +721,7 @@ footer {
     align-self: flex-start;
     margin-left: 1vw;
     transition-duration: 0.2s;
+    width: auto;
   }
 
   .hr-footer {
