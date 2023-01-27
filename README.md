@@ -66,6 +66,7 @@
 
 
 - [[Github-pages]](https://alejandro-bernal-m.github.io/Portfolio-setup-and-mobile-first/)
+-[walkthrough](https://www.loom.com/share/3de0013cbe2b4319837e3f0951a98af4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +126,7 @@ Just open it in your browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[There_is_not_any_feature_coming]**
+- [ ] **[JavaScript-implementation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
