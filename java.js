@@ -19,3 +19,13 @@ modalA2.addEventListener('click', () => {
 modalA3.addEventListener('click', () => {
   modal.classList.remove('modal-show');
 });
+
+// smooth scrooling implmentation
+const navLinks = document.querySelectorAll('.modala, nav a');
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetSection = document.querySelector(e.target.getAttribute('href'));
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
