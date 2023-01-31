@@ -48,6 +48,12 @@
     <li>CSS</li>
   </ul>
 </details>
+<details>
+  <summary>JAVASCRIPT</summary>
+  <ul>
+    <li>JAVASCRIPT</li>
+  </ul>
+</details>
 
 
 <!-- Features -->
@@ -118,6 +124,10 @@ Just open it in your browser.
 👤 **Author1**
 
 - GitHub: [Alejandro](https://github.com/Alejandro-Bernal-M)
+
+👤 **Author2**
+
+- GitHub: [Abraham](https://github.com/cabraham1)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

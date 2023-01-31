@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/71e053ea26.js"
       crossorigin="anonymous"
     ></script>
+  
     <title>Portfolio Alejandro-Bernal-M</title>
   </head>
   <body>
@@ -21,13 +22,21 @@
         <a class="mobile" href="#header"
           ><img src="Images/Welcome.png" id="Welcome" alt="Welcome"
         /></a>
-        <a class="mobile"><i class="fa1 fa-solid fa-bars"></i></a>
+        <a  id="hambur" class="mobile"><i class="fa1 fa-solid fa-bars"></i></a>
         <ul class="desktop ul-nav">
           <li><a href="#work-section">Porfolio</a></li>
           <li><a href="#about-me-section">About</a></li>
           <li><a href="#form-section">Contact</a></li>
         </ul>
       </nav>
+      <div class="modal-menu mobile">
+        <img class="modal-img" src="Icons/Enabled.svg">
+        <ul class="modal-ul">
+          <li><a class="modal-a1" href="#work-section">Porfolio</a></li>
+          <li><a class="modal-a2" href="#about-me-section">About</a></li>
+          <li><a class="modal-a3" href="#form-section">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <section class="headline">
       <div id="content">
@@ -311,5 +320,6 @@ Enter text here</textarea
       </div>
       <p class="last-email mobile">myemailhere@email.com</p>
     </footer>
+    <script src="java.js"></script>
   </body>
 </html>
