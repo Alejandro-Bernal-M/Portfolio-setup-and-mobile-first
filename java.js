@@ -13,3 +13,4 @@ modalImg.addEventListener("click", () => {
 modalA1.addEventListener("click", () => {
   modal.classList.remove("modal-show");
 });
+
