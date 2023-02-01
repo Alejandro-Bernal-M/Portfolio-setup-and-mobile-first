@@ -124,13 +124,6 @@ const buttonGrid = document.querySelectorAll('.button-flex');
 const divPopup = document.querySelector('.div-popup');
 const myArr = [];
 
-function showAll() {
-  const all1 = document.querySelectorAll('.hide');
-  all1.forEach((section) => {
-    section.classList.remove('desktop');
-  });
-}
-
 function constructPopup(arr, ini) {
   let counter = ini;
   if (window.matchMedia('(min-width: 768px)').matches) {
@@ -143,7 +136,6 @@ function constructPopup(arr, ini) {
       popupClose.addEventListener('click', () => {
         popup.classList.remove('popup-show');
         divPopup.innerHTML = '';
-        showAll();
         window.scrollTo(0, 720);
       });
       const newimg2 = document.createElement('img');
@@ -197,7 +189,6 @@ function constructPopup(arr, ini) {
       popupClose.addEventListener('click', () => {
         popup.classList.remove('popup-show');
         divPopup.innerHTML = '';
-        showAll();
         window.scrollTo(0, 720);
       });
       const newimg = document.createElement('img');
@@ -241,12 +232,6 @@ function constructPopup(arr, ini) {
     });
   }
 }
-function hideAll() {
-  const all = document.querySelectorAll('.hide');
-  all.forEach((section) => {
-    section.classList.add('desktop');
-  });
-}
 
 myArr.push(divPopup);
 buttonGrid.forEach((button) => {
@@ -254,7 +239,6 @@ buttonGrid.forEach((button) => {
     popup.classList.toggle('popup-show');
     const buttonCounter = e.target.id;
     constructPopup(myArr, buttonCounter);
-    hideAll();
     window.scrollTo(0, 0);
   });
 });
