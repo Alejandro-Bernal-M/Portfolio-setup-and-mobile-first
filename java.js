@@ -110,3 +110,34 @@ function constructItemWork(arr) {
 }
 
 constructItemWork(gridItems);
+
+//  Form validation
+
+
+const form = document.querySelector('.form');
+const email = document.getElementById('user-email');
+const errorMessage = document.getElementById('form-error');
+function validation(validOrNot) {
+  let value = '';
+  const string = validOrNot;
+  const lower = string.toLowerCase();
+  if ( string === lower) {
+    value = '';
+  } else {
+    value = 'The mail must be writen in lower case';
+  }
+  return value;
+}
+email.addEventListener('input' , () => {
+  errorMessage.textContent = (validation(email.value));
+  if (errorMessage.textContent === 'The mail must be writen in lower case') {
+    errorMessage.classList.add('error-active');
+  } else {
+    errorMessage.classList.remove('error-active');
+  }
+})
+form.addEventListener('submit', (event) => {
+  if (errorMessage.textContent === 'The mail must be writen in lower case') {
+    event.preventDefault();
+  }
+});
