@@ -587,6 +587,21 @@ label {
   text-align: center;
   letter-spacing: 0.03em;
 }
+ #form-error {
+  background-color: #8b0000;
+  color: #fff;
+  position: relative;
+  top: -40px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  display: none;
+  margin: 0;
+ }
+
+ .error-active {
+  display: block !important;
+ }
 
 .button-h:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
