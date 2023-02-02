@@ -275,29 +275,3 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// Storage
-
-const dataStorage = { fullName: '', mail: '', textArea: '' };
-let toStore;
-
-const fullName = document.getElementById('fullname');
-const textArea = document.getElementById('textarea');
-
-fullName.addEventListener('input', () => {
-  dataStorage.fullName = fullName.value;
-  toStore = JSON.stringify(dataStorage);
-  localStorage.setItem('formData', toStore);
-});
-
-email.addEventListener('input', () => {
-  dataStorage.mail = email.value;
-  toStore = JSON.stringify(dataStorage);
-  localStorage.setItem('formData', toStore);
-});
-
-textArea.addEventListener('input', () => {
-  dataStorage.textArea = textArea.value;
-  toStore = JSON.stringify(dataStorage);
-  localStorage.setItem('formData', toStore);
-});
-
