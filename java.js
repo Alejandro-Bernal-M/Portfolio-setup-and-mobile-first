@@ -277,7 +277,7 @@ form.addEventListener('submit', (event) => {
 
 // Storage
 
-const dataStorage = {};
+const dataStorage = { fullName: '', mail: '', textArea: '' };
 let toStore;
 
 const fullName = document.getElementById('fullname');
@@ -300,3 +300,4 @@ textArea.addEventListener('input', () => {
   toStore = JSON.stringify(dataStorage);
   localStorage.setItem('formData', toStore);
 });
+
