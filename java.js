@@ -300,4 +300,3 @@ window.addEventListener('DOMContentLoaded', () => {
     errorMessage.classList.remove('error-active');
   }
 });
-
