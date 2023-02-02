@@ -274,3 +274,29 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// Storage
+const dataStorage = {};
+let toStore;
+const fullName = document.getElementById('fullname');
+const textArea = document.getElementById('textarea');
+form.addEventListener('input', () => {
+  dataStorage.fullName = fullName.value;
+  dataStorage.mail = email.value;
+  dataStorage.textArea = textArea.value;
+  toStore = JSON.stringify(dataStorage);
+  localStorage.setItem('formData', toStore);
+});
+// retriving
+window.addEventListener('DOMContentLoaded', () => {
+  const dataRetrieve = JSON.parse(localStorage.getItem('formData'));
+  document.getElementById('fullname').value = dataRetrieve.fullName;
+  document.getElementById('user-email').value = dataRetrieve.mail;
+  document.getElementById('textarea').value = dataRetrieve.textArea;
+  errorMessage.textContent = (validation(email.value));
+  if (errorMessage.textContent === 'The mail must be writen in lower case') {
+    errorMessage.classList.add('error-active');
+  } else {
+    errorMessage.classList.remove('error-active');
+  }
+});
