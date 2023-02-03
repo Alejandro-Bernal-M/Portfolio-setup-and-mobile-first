@@ -20,7 +20,7 @@ modalA3.addEventListener('click', () => {
   modal.classList.remove('modal-show');
 });
 
-// smooth scrooling implmentation
+// smooth scrooling implementation
 const navLinks = document.querySelectorAll('.modala, nav a');
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
@@ -136,7 +136,7 @@ function constructPopup(arr, ini) {
       popupClose.addEventListener('click', () => {
         popup.classList.remove('popup-show');
         divPopup.innerHTML = '';
-        window.scrollTo(0, 720);
+        window.scrollTo(0, 1000);
       });
       const newimg2 = document.createElement('img');
       newimg2.classList.add('img-holder2');
