@@ -255,7 +255,7 @@ function validation(validOrNot) {
   if (string === lower) {
     value = '';
   } else {
-    value = 'The mail must be writen in lower case';
+    value = 'The mail must be writen in lower casee';
   }
   return value;
 }
@@ -290,7 +290,7 @@ form.addEventListener('input', () => {
 // retriving
 window.addEventListener('DOMContentLoaded', () => {
   const dataRetrieve = JSON.parse(localStorage.getItem('formData'));
-  document.getElementById('fullname').value = dataRetrieve.fullName;
+  document.getElementById('fullname').textContent = dataRetrieve.fullName;
   document.getElementById('user-email').value = dataRetrieve.mail;
   document.getElementById('textarea').value = dataRetrieve.textArea;
   errorMessage.textContent = (validation(email.value));
