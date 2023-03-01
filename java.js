@@ -32,13 +32,13 @@ navLinks.forEach((link) => {
 // Dinamically construction -----
 const arrayProjects = [
   {
-    name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
-    featuredImage: 'Projects-images/flowers.jpg',
-    featuredImageDesktop: 'Desktop-images/Snapshoot-Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaSript'],
-    linktoliveversion: '',
-    LinkToSource: '',
+    name: "To Do's list",
+    description: "To Do's list is a web page where you can add tasks that you need to do, edit the task, check the task when is done, clear all the tasks that are completed and drag the task to change the order. ",
+    featuredImage: './images/to-do-list-mobile.jpg',
+    featuredImageDesktop: './Desktop-images/projects/to-do-list.jpg',
+    technologies: ['HTML5', 'CSS', 'JavaScript'],
+    linktoliveversion: 'https://alejandro-bernal-m.github.io/To-do-list/',
+    LinkToSource: 'https://github.com/Alejandro-Bernal-M/To-do-list',
   },
   {
     name: 'Multi-Post Stories<br /> Gain+Glory',
@@ -94,6 +94,8 @@ function constructItemWork(arr, ini) {
   arr.forEach((item) => {
     const newDiv = document.createElement('div');
     newDiv.classList.add('img-holder');
+    newDiv.style.backgroundImage = `url('${arrayProjects[counter].featuredImage}')`;
+    newDiv.style.backgroundSize = '100% 100%';
     item.appendChild(newDiv);
     const newH3 = document.createElement('h3');
     newH3.classList.add('text3');
@@ -150,14 +152,14 @@ function constructPopup(arr, ini) {
       const newDiv2 = document.createElement('div');
       const newButton = document.createElement('button');
       newButton.classList.add('button-flex2', 'button-h');
-      newButton.textContent = 'See live';
+      newButton.innerHTML = `<a href="${arrayProjects[counter].linktoliveversion}" target ="_blank">See live</a>`;
       const logo1 = document.createElement('img');
       logo1.src = 'Icons/Icon-Export.svg';
       newButton.appendChild(logo1);
       newDiv2.appendChild(newButton);
       const newButton2 = document.createElement('button');
       newButton2.classList.add('button-flex2', 'button-h');
-      newButton2.textContent = 'See source';
+      newButton2.innerHTML = `<a href="${arrayProjects[counter].LinkToSource}" target ="_blank">See source</a>`;
       const logo2 = document.createElement('img');
       logo2.src = 'Icons/github-white.svg';
       newButton2.appendChild(logo2);
@@ -183,7 +185,7 @@ function constructPopup(arr, ini) {
     arr.forEach((item) => {
       const newClose = document.createElement('img');
       newClose.id = 'enabled2';
-      newClose.src = 'Icons/Enabled2.svg';
+      newClose.src = 'Icons/x.png';
       item.appendChild(newClose);
       const popupClose = document.getElementById('enabled2');
       popupClose.addEventListener('click', () => {
@@ -214,14 +216,14 @@ function constructPopup(arr, ini) {
       const newDiv2 = document.createElement('div');
       const newButton = document.createElement('button');
       newButton.classList.add('button-flex2', 'button-h');
-      newButton.textContent = 'See live';
+      newButton.innerHTML = `<a href="${arrayProjects[counter].linktoliveversion}" target ="_blank">See live</a>`;
       const logo1 = document.createElement('img');
       logo1.src = 'Icons/Icon-Export.svg';
       newButton.appendChild(logo1);
       newDiv2.appendChild(newButton);
       const newButton2 = document.createElement('button');
       newButton2.classList.add('button-flex2', 'button-h');
-      newButton2.textContent = 'See source';
+      newButton2.innerHTML = `<a href="${arrayProjects[counter].LinkToSource}" target ="_blank">See source</a>`;
       const logo2 = document.createElement('img');
       logo2.src = 'Icons/github-white.svg';
       newButton2.appendChild(logo2);
